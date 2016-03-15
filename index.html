@@ -1,0 +1,30 @@
+<!doctype html>
+<title>broken audio in firefox</title>
+<style>
+audio {
+   border: 1px solid transparent;
+}
+.broken {
+   border-color: red;
+}
+</style>
+<p>Firefox (tested with version 45 on Windows and OS X) doesn't play some mp3 files; all of them have been dumped from the shoutcast stream <a href="http://mp3stream1.apasf.apa.at:8000/;">http://mp3stream1.apasf.apa.at:8000/;</a>. All of them work in IE11/Win7 and Chrome (also Android; Android also old stock browser) and Safari.</p>
+<li><audio src="fm4-1457625021.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625023.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625024.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625027.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625029.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625031.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625032.mp3" controls preload="none" type="audio/mpeg" class="broken"></audio>broken in ff (android: <code>E/SoftMP3 ( 4154): mp3 decoder returned error 1
+</code>)
+<li><audio src="fm4-1457625034.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625037.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625038.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625045.mp3" controls preload="none" type="audio/mpeg" class="broken"></audio>broken in ff
+<li><audio src="fm4-1457625047.mp3" controls preload="none" type="audio/mpeg"></audio>
+<li><audio src="fm4-1457625048.mp3" controls preload="none" type="audio/mpeg"></audio>
+
+<h2>further cut</h2>
+<li><audio src="man1.mp3" controls preload="none" type="audio/mpeg"></audio>4
+<li><audio src="man2.mp3" controls preload="none" type="audio/mpeg" class="broken"></audio>3 broken in ff (crash on android 4.2)
+<li><audio src="man3.mp3" controls preload="none" type="audio/mpeg"></audio>5
